@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Video</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #video-container {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <h1 id="title">Math Video</h1>
+        <div id="video-container">
+            <video controls>
+                <source src="vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+</body>
+</html>
